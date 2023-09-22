@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif, 'Times New Roman';
     color: black;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 p {
@@ -21,6 +21,7 @@ p {
     border-color: black;
     box-shadow: 0 0 20px 5px #a5d2ee;
     transition: ease-in-out 0.5s;
+    background-color: white;
 }
 
 img:hover {
