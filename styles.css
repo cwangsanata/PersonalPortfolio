@@ -1,17 +1,25 @@
-/* Question 0. Import a font and make all text in the body using that font. Check the homework instructions for more information!*/
-/* Set all text in the body to be a certain color (whatever color you choose!)*/
-/* Center all text in the body. Check out the homework spec for help.*/
-
 body {
     margin: 50px auto;
     max-width: 1200px;
-    /* YOUR CODE HERE */
+    font-family: 'Roboto', sans-serif, 'Times New Roman';
+    color: black;
+    text-align: center;
+    background-color: white;
 }
 
-/* Question 1: Add a border, border radius, box shadow, or whatever other styling you'd like to your image! */
-img {
+/* Header */
+/* NOTE: Changed img tag to a id selector instead of an element selector since I used images elsewhere*/    
+#intro-image {
     width: 175px;
-    /* YOUR CODE HERE */
+    border-style: solid;
+    border-radius: 25%;
+    border-color: black;
+    box-shadow: 0 0 20px 5px #a5d2ee;
+    transition: ease-in-out 0.5s;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
 
 h1 {
@@ -19,83 +27,148 @@ h1 {
     transition: ease-in-out 0.5s;
 }
 
-/* Question 2. Select the h1 tag and add a hover effect! You can change the background-color, color, opacity, or anything you want.*/
+h1:hover {
+    background-position: 100% 100%;
+    transform: scale(1.05);
+}
 
-/* YOUR CODE HERE */
+#education {
+    background-color: #769ECB;
+}
 
+#experience {
+    background-color: #9DBAD5;
+}
 
+#projects {
+    background-color: #FAF3DD;
+}
 
-
-
-/* Question 3. Add different background colors for all the different sections (Education, Experience, etc.) by selecting them via ids. */
-
-/* YOUR CODE HERE */
-
-
-
-
-/* Question 4. Add margin, padding, and borders to the section-wrapper class! */
+#contact {
+    background-color: #C8D6B9;
+    margin-bottom: 0px;
+}
 
 .section-wrapper {
     background-color: #a5d2ee;
-    /*YOUR CODE HERE*/
+    margin: 10px 0;
+    padding: 20px 0;
+    border: 4px solid black;
 }
 
+/* Education Section */
+.education-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin: 1em;
+    background-color: #a5d2ee;
+    transition: ease-in-out 0.2s;
+}
 
+.education-wrapper:hover {
+    transform: scale(1.025);
+}
+
+.education-subheader {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-between;
+    margin: 0 5em 0 5em;
+}
+
+.education-subheader p {
+    padding-top: 5px;
+}
+
+.education-content-wrapper p {
+    margin: 1em 5em 1em 5em;
+}
 
 /* Experience Section */
-
-/* Question 5a. This is a little tougher! Use CSS Flexbox to display your experiences as shown in the diagram.
- Hint: Check the homework spec for some help!*/
-
 .experience-wrapper {
-    display: ;/* YOUR CODE HERE */
-    gap: ;/*YOUR CODE HERE*/
-    justify-content: ;/*YOUR CODE HERE*/
+    display: flex;
+    gap: 1em;
+    justify-content: center;
 }
-
-/* Question 5b. Add a background color to the experience-list-item class.*/
 
 .experience-list-item {
     border: 4px solid #1d3557;
     text-align: left;
-    width: 250px;
+    width: 35%;
     padding: 10px 20px;
     border-radius: 15px;
-    /*YOUR CODE HERE*/
-
-    /* Side note: the transition attribute makes effects look smoother! 
-    This means the hover effect will slowly kick in for 0.2s. */
+    background-color: #a5d2ee;
     transition: ease-in-out 0.2s;
+    
 }
-
-
-
-/* Question 5c. Let's take a break! Add a hover effect to each experience-list-item div. 
-Experiment with border, border-radius, background-color, or whatever you want!*/
 
 .experience-list-item:hover {
-    /* YOUR CODE HERE */
+    transform: scale(1.025);
 }
-
-
 
 
 /* Projects Section */
+.project-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    border: 4px solid black;
+    margin: 1em;
+    transition: ease-in-out 0.2s;
+    border-radius: 15px;
+    background-color: bisque;
+}
 
-/* Question 6. Use CSS Flexbox and hover effects for the Projects Section, just as you did for the Experience Section! */
+.project-list-item:hover{
+    transform: scale(1.025);
+}
 
-/*YOUR CODE HERE*/
+.project-list-item  p {
+    margin-top: 0;
+}
 
-
-
-
-
+.project-wrapper a{
+    text-decoration: none;
+    color: black;
+}
 
 /* Contact Section */
+/* NOTE: Used the `a` tag elsewhere, so I had to use the class selector instead of the element selector. */
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    padding-left: 0;
+}
 
-/* Question 7. Make your link look like the one shown in the homework spec!*/
+.contact-link {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition: ease-in-out 0.2s;
+    background-color:rgb(42, 65, 167);
+    list-style-type: none;
+    box-shadow: 0 0 10px 1px black;
+    border: black solid 4px;
+}
 
-a {
-    /*YOUR CODE HERE*/
+.contact-link:hover {
+    transform: scale(1.05);
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-link img {
+    width: 20px;
+    padding-right: 0.5em;
 }
