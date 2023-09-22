@@ -13,7 +13,6 @@ p {
 }
 
 /* Header */
-/* NOTE: Changed img tag to a id selector instead of an element selector since I used images elsewhere*/    
 #intro-image {
     width: 175px;
     border-style: solid;
@@ -160,7 +159,6 @@ h1:hover {
 }
 
 /* Contact Section */
-/* NOTE: Used the `a` tag elsewhere, so I had to use the class selector instead of the element selector. */
 .contact-wrapper {
     display: flex;
     flex-direction: row;
