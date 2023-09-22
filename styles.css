@@ -7,6 +7,11 @@ body {
     background-color: white;
 }
 
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
 /* Header */
 /* NOTE: Changed img tag to a id selector instead of an element selector since I used images elsewhere*/    
 #intro-image {
@@ -102,13 +107,22 @@ h1:hover {
     border-radius: 15px;
     background-color: #a5d2ee;
     transition: ease-in-out 0.2s;
-    
 }
 
 .experience-list-item:hover {
     transform: scale(1.025);
 }
 
+.experience-list-item-subheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+
+.experience-list-item ul li {
+    margin-top: 1em;
+}
 
 /* Projects Section */
 .project-list-item {
