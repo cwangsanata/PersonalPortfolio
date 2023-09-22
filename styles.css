@@ -37,16 +37,20 @@ h1:hover {
     transform: scale(1.05);
 }
 
+#about {
+    background-color: #C8D6B9;
+}
+
 #education {
     background-color: #769ECB;
 }
 
 #experience {
-    background-color: #9DBAD5;
+    background-color: #FAF3DD;
 }
 
 #projects {
-    background-color: #FAF3DD;
+    background-color: #9DBAD5;
 }
 
 #contact {
@@ -59,6 +63,10 @@ h1:hover {
     margin: 10px 0;
     padding: 20px 0;
     border: 4px solid black;
+}
+/* About Section */
+.about-content-wrapper p {
+    margin: 1em 4em 1em 4em;
 }
 
 /* Education Section */
@@ -105,7 +113,7 @@ h1:hover {
     width: 35%;
     padding: 10px 20px;
     border-radius: 15px;
-    background-color: #a5d2ee;
+    background-color: bisque;
     transition: ease-in-out 0.2s;
 }
 
@@ -134,7 +142,7 @@ h1:hover {
     margin: 1em;
     transition: ease-in-out 0.2s;
     border-radius: 15px;
-    background-color: bisque;
+    background-color: #a5d2ee;
 }
 
 .project-list-item:hover{
