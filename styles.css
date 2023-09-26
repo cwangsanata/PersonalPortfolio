@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif, 'Times New Roman';
     color: black;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 p {
@@ -30,6 +30,7 @@ img:hover {
 h1 {
     font-size: 45px;
     transition: ease-in-out 0.5s;
+    color: white;
 }
 
 h1:hover {
@@ -201,9 +202,8 @@ h1:hover {
     border-radius: 15px;
     padding: 10px 20px;
     transition: ease-in-out 0.2s;
-    background-color:rgb(42, 65, 167);
+    background-color: #a5d2ee;
     list-style-type: none;
-    box-shadow: 0 0 10px 1px black;
     border: black solid 4px;
 }
 
@@ -213,10 +213,15 @@ h1:hover {
 
 .contact-link a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .contact-link img {
     width: 20px;
     padding-right: 0.5em;
+}
+
+/* Footer */
+footer p {
+    color: white;
 }
