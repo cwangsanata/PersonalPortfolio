@@ -1,36 +1,29 @@
-window.onload = () => {
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let interval = null;
-
-    const h1Element = document.querySelector("h1");
-    
-    let iteration = 0;
-
-    clearInterval(interval);
-
-    interval = setInterval(() => {
-        // Generates the hacker text
-        h1Element.innerText = h1Element.innerText
-            .split("")
-            .map((letter, index) => {
-                if (index < iteration)
-                    return h1Element.dataset.value[index];
-                else
-                    return letters[Math.floor(Math.random() * 26)]
-            })
-            .join("");
-
-        if (iteration >= h1Element.dataset.value.length)
+// Typing text effect
+function displayText() {
+    const textElement = document.getElementById('name');
+    const textToDisplay = "Chris Wangsanata";
+    let charIndex = 0;
+    const interval = setInterval(() => {
+        if (charIndex < textToDisplay.length) {
+            textElement.textContent += textToDisplay[charIndex];
+            charIndex++;
+        } else {
             clearInterval(interval);
+        }
+    }, 75);
+}
 
-        iteration += 1 / 3;
-    }, 30);
-
-    // Blinking cursor effect
+// Blinking cursor effect
+function blinkCursor() {
     setInterval(() => {
-        const cursor = document.querySelector("#cursor");
+        const cursor = document.getElementById("cursor");
         cursor.style.opacity = cursor.style.opacity == 0 ? 1 : 0;
     }, 500);
+}
+
+window.onload = () => {
+    displayText();
+    blinkCursor();
 }
 
 
