@@ -9,6 +9,7 @@ window.onload = () => {
     clearInterval(interval);
 
     interval = setInterval(() => {
+        // Generates the hacker text
         h1Element.innerText = h1Element.innerText
             .split("")
             .map((letter, index) => {
@@ -24,4 +25,12 @@ window.onload = () => {
 
         iteration += 1 / 3;
     }, 30);
+
+    // Blinking cursor effect
+    setInterval(() => {
+        const cursor = document.querySelector("#cursor");
+        cursor.style.opacity = cursor.style.opacity == 0 ? 1 : 0;
+    }, 500);
 }
+
+

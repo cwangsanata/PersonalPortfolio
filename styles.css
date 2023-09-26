@@ -14,6 +14,10 @@ p {
 
 /* Header */
 #intro-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
     width: 175px;
     border-style: solid;
     border-radius: 25%;
@@ -28,6 +32,7 @@ img:hover {
 }
 
 h1 {
+    display: inline;
     font-size: 45px;
     transition: ease-in-out 0.5s;
     color: white;
@@ -36,6 +41,11 @@ h1 {
 h1:hover {
     background-position: 100% 100%;
     transform: scale(1.05);
+}
+
+#cursor {
+    color: white;
+    font-size: 3em;
 }
 
 #about {
