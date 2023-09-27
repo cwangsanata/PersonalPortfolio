@@ -99,6 +99,10 @@ h1:hover {
     margin: 1em 4em 1em 4em;
 }
 
+.about-content-wrapper a {
+    color: black;
+}
+
 /* Technologies Section */
 #tags {
     display: flex;
@@ -202,11 +206,13 @@ h1:hover {
     transform: scale(1.025);
 }
 
-.project-list-item  p {
+.project-list-item p {
     margin-top: 0;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
-.project-wrapper a{
+.project-wrapper a {
     text-decoration: none;
     color: black;
 }
