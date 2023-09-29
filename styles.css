@@ -193,7 +193,8 @@ h1:hover {
 .experience-wrapper {
     display: flex;
     gap: 1em;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 2rem 1em;
 }
 
 .experience-list-item {
@@ -265,7 +266,7 @@ h1:hover {
     border-radius: 15px;
     padding: 10px 20px;
     transition: ease-in-out 0.2s;
-    background-color: #a5d2ee;
+    background-color: rgba(173, 235, 173, 0.37);
     list-style-type: none;
     border: black solid 4px;
 }
