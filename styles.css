@@ -288,3 +288,34 @@ h1:hover {
 footer p {
     color: white;
 }
+
+/* Media Queries */
+/* Write a media query that causes my experience section to flex column */
+@media (max-width: 800px) {
+    .experience-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-list-item {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .contact-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-link {
+        width: 25%;
+    }
+
+    .contact-wrapper li {
+        justify-content: center;
+    }
+    
+}
