@@ -194,7 +194,7 @@ h1:hover {
 .experience-wrapper {
     display: flex;
     gap: 1em;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 2rem 1em;
 }
 
