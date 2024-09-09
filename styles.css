@@ -292,7 +292,6 @@ footer p {
 }
 
 /* Media Queries */
-/* Write a media query that causes my experience section to flex column */
 @media (max-width: 800px) {
     .experience-wrapper {
         flex-direction: column;
