@@ -1,1 +1,1 @@
-Rewrite is taking longer than I thought. Rewrite coming soon!
+Rewrite back on the table!
